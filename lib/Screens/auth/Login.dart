@@ -1,11 +1,11 @@
 import 'package:cliffordproperty/Helpers/Nav_Helper.dart';
 import 'package:cliffordproperty/Screens/HomeScreen.dart';
 import 'package:cliffordproperty/Screens/auth/Register.dart';
-import 'package:cliffordproperty/WIdgets/LoadingWidget.dart';
-import 'package:cliffordproperty/WIdgets/LoginUsingScocialMedia.dart';
-import 'package:cliffordproperty/WIdgets/MyCheckBox.dart';
-import 'package:cliffordproperty/WIdgets/MyTextFormFiled.dart';
-import 'package:cliffordproperty/WIdgets/My_Button.dart';
+import 'package:cliffordproperty/Widgets/LoadingWidget.dart';
+import 'package:cliffordproperty/Widgets/LoginUsingScocialMedia.dart';
+import 'package:cliffordproperty/Widgets/MyCheckBox.dart';
+import 'package:cliffordproperty/Widgets/MyTextFormFiled.dart';
+import 'package:cliffordproperty/Widgets/My_Button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

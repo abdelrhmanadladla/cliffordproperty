@@ -1,23 +1,25 @@
 class PropertyModel {
-  String? id;
+  String id;
   bool? isFav;
-  String? propertyTitle;
-  String? location;
-  num? price;
-  String? imageUrl;
-  num? beds;
-  num? baths;
-  num? kitchens;
+  String propertyTitle;
+  String location;
+  num price;
+  String imageUrl;
+  num beds;
+  num baths;
+  num kitchens;
+  String description;
 
   PropertyModel({
-    this.id,
+    required this.id,
+    required this.description,
     this.isFav,
-    this.propertyTitle,
-    this.location,
-    this.price,
-    this.baths,
-    this.beds,
-    this.kitchens,
-    this.imageUrl,
+    required this.propertyTitle,
+    required this.location,
+    required this.price,
+    required this.baths,
+    required this.beds,
+    required this.kitchens,
+    required this.imageUrl,
   });
 }

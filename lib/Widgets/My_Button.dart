@@ -9,6 +9,7 @@ class My_Button extends StatefulWidget {
   final Color textColor;
   final String buttonText;
   final bool enabled;
+  final TextStyle? textStyle;
   final double? height;
   const My_Button(
       {required this.buttonText,
@@ -18,6 +19,7 @@ class My_Button extends StatefulWidget {
       this.height,
       this.textColor = Colors.white,
       this.buttonColor,
+      this.textStyle,
       this.onTap,
       super.key});
 
@@ -44,13 +46,14 @@ class _My_ButtonState extends State<My_Button> {
           padding: EdgeInsets.symmetric(horizontal: widget.textPadding),
           child: Text(
             widget.buttonText,
-            style: TextStyle(
-              fontSize: 20.sp,
-              color: !widget.enabled
-                  ? Theme.of(context).colorScheme.onBackground
-                  : widget.textColor,
-              fontWeight: FontWeight.w600,
-            ),
+            style: widget.textStyle ??
+                TextStyle(
+                  fontSize: 16.sp,
+                  color: !widget.enabled
+                      ? Theme.of(context).colorScheme.onBackground
+                      : widget.textColor,
+                  fontWeight: FontWeight.w500,
+                ),
           ),
         ),
       ),

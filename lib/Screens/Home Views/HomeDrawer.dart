@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cliffordproperty/Helpers/Nav_Helper.dart';
 import 'package:cliffordproperty/Screens/ContactUsScreen.dart';
 import 'package:cliffordproperty/Screens/Home%20Views/ProfileView.dart';
@@ -28,8 +29,9 @@ class HomeDrawer extends StatelessWidget with Nav_Helper {
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
             ),
-            child: Image.network(
-                'https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1985&q=80'),
+            child: CachedNetworkImage(
+                imageUrl:
+                    'https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1985&q=80'),
           ),
           SizedBox(height: 8.h),
           Text(

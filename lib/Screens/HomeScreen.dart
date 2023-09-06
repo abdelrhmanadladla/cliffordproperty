@@ -1,7 +1,9 @@
 import 'package:cliffordproperty/Models/BottomNavModel.dart';
 import 'package:cliffordproperty/Screens/Home%20Views/HomeDrawer.dart';
 import 'package:cliffordproperty/Screens/Home%20Views/Home_View.dart';
+import 'package:cliffordproperty/Screens/Home%20Views/MessagesView.dart';
 import 'package:cliffordproperty/Screens/Home%20Views/ProfileView.dart';
+import 'package:cliffordproperty/Screens/Home%20Views/PropertiesShowScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -28,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: const HomeDrawer(),
       body: const [
         HomeView(),
-        Placeholder(),
-        Placeholder(),
+        PropertiesShowScreen(),
+        MessagesView(),
         ProfileView(),
       ][selectedIndex],
       bottomNavigationBar: Container(

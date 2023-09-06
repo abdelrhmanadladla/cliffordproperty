@@ -1,4 +1,4 @@
-import 'package:cliffordproperty/Screens/HomeScreen.dart';
+import 'package:cliffordproperty/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           home: // const SplashScreen(),
-              const HomeScreen(),
+              const SplashScreen(),
         );
       },
     );

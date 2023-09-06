@@ -1,14 +1,14 @@
 import 'package:circle_flags/circle_flags.dart';
 import 'package:cliffordproperty/Helpers/Nav_Helper.dart';
-import 'package:cliffordproperty/WIdgets/LoadingWidget.dart';
-import 'package:cliffordproperty/WIdgets/My_Button.dart';
+import 'package:cliffordproperty/Widgets/LoadingWidget.dart';
+import 'package:cliffordproperty/Widgets/My_Button.dart';
 import 'package:country_calling_code_picker/picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../WIdgets/LoginUsingScocialMedia.dart';
-import '../../WIdgets/MyTextFormFiled.dart';
+import '../../Widgets/LoginUsingScocialMedia.dart';
+import '../../Widgets/MyTextFormFiled.dart';
 import '../HomeScreen.dart';
 
 class Register extends StatefulWidget {

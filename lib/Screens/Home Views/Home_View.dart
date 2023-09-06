@@ -1,6 +1,6 @@
 import 'package:cliffordproperty/Helpers/Nav_Helper.dart';
 import 'package:cliffordproperty/Screens/NotificationsScreen.dart';
-import 'package:cliffordproperty/WIdgets/MySearchBar.dart';
+import 'package:cliffordproperty/Widgets/MySearchBar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -69,11 +69,12 @@ class _HomeViewState extends State<HomeView> with Nav_Helper {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ),
-          SizedBox(height: 24.h),
 
-          MySearchBar(controller: _searchController),
-
-          SizedBox(height: 16.h),
+          Padding(
+            padding: EdgeInsets.only(
+                right: 16.w, left: 16.w, top: 24.h, bottom: 16.h),
+            child: MySearchBar(controller: _searchController),
+          ),
 
           ///Category section
 

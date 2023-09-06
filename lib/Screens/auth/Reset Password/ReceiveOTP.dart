@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:cliffordproperty/Helpers/Nav_Helper.dart';
 import 'package:cliffordproperty/Screens/auth/Reset%20Password/ResetPassowrd.dart';
-import 'package:cliffordproperty/WIdgets/My_Button.dart';
+import 'package:cliffordproperty/Widgets/My_Button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localization.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
