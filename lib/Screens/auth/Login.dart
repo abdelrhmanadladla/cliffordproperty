@@ -28,6 +28,7 @@ class _LoginState extends State<Login> with Nav_Helper {
   bool isChecked = false;
   bool isLoading = false;
   bool passwordIsShown = false;
+
   @override
   void initState() {
     super.initState();
@@ -105,6 +106,7 @@ class _LoginState extends State<Login> with Nav_Helper {
                         prefix: 'password_icon',
                         hint: appLocale.passwordHint,
                         controller: _passwordController,
+
                         validator: (value) {
                           if (value == null ||
                               value.isEmpty ||

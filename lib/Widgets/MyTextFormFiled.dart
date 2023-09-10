@@ -21,7 +21,7 @@ class MyTextFormField extends StatelessWidget {
   final Function(String value)? onChange;
   const MyTextFormField({
     this.onChange,
-    this.maxLines,
+    this.maxLines=1,
     this.onSubmit,
     super.key,
     this.actionType = TextInputAction.next,
